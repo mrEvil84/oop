@@ -6,10 +6,10 @@ public class CarApp {
 
         Garage garage = new Garage();
 
-        garage.add(new Vehicle());
-        garage.add(new Car());
-        garage.add(new Bike());
-        garage.add(new SportCar());
+        garage.park(new Vehicle())
+        .park(new Car())
+        .park(new Bike())
+        .park(new SportCar());
 
         garage.repairAll();
     }
