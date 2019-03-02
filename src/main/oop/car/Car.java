@@ -1,12 +1,15 @@
 package car;
 
-public class Car {
+public class Car extends Vehicle {
 
     String name;
 
     String manufacturer;
 
     Double engineCapacity;
+
+    public Car() {
+    }
 
     public Car(String name, String manufacturer, Double engineCapacity) {
         this.name = name;
@@ -15,6 +18,10 @@ public class Car {
     }
 
 
+    @Override
+    public void repair() {
+        System.out.println("Car repair $$ ");
+    }
 
     public String getName() {
         return name;
