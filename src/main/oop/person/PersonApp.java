@@ -4,13 +4,13 @@ public class PersonApp {
 
     public static void main(String[] args) throws Throwable {
 
-//        Person p = new Person("Adam", "Nowak", 30, "84101812345");
-//        System.out.println(p.toString());
+        Person p = new Person("Adam", "Nowak", 30, "84101812345");
+        System.out.println(p.toString());
 //        changeNameToRomek(p);
 //        System.out.println(p.toString());
 
 //        testInstanceOf();
-        testEat();
+//        testEat();
 
     }
 

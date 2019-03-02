@@ -58,8 +58,7 @@ public class Person extends Mammal {
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
-                ", pesel='" + pesel + '\'' +
-                ", id=" + id.toString() +
+                ", pesel='" + pesel +
                 '}';
     }
 
