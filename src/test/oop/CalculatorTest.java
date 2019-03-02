@@ -23,7 +23,6 @@ class CalculatorTest {
 
         sut.add(10).add(10).add(10);
 
-
         assertEquals(30, sut.getAddResult());
     }
 }

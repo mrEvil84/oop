@@ -1,5 +1,7 @@
 package person;
 
+import java.util.UUID;
+
 public class Person {
 
     String name;
@@ -10,10 +12,10 @@ public class Person {
 
     String pesel;
 
-    String status;
+    UUID id;
 
     public Person() {
-        this.status = "Created";
+        this.id = UUID.randomUUID();
     }
 
     public Person(String name, String surname, int age, String pesel) {
@@ -41,8 +43,8 @@ public class Person {
         return pesel;
     }
 
-    public String getStatus() {
-        return status;
+    public UUID getId() {
+        return id;
     }
 
     @Override
@@ -52,6 +54,12 @@ public class Person {
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
                 ", pesel='" + pesel + '\'' +
+                ", id=" + id.toString() +
                 '}';
+    }
+
+    protected void finalize( ) throws Throwable
+    {
+        System.out.println("Niszczenie obiektu...Person");
     }
 }
