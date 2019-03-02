@@ -1,5 +1,7 @@
 package oop;
 
+
+
 public class App {
 
     public static void main(String[] args) {
@@ -16,6 +18,8 @@ public class App {
                 "10 + 10 + 10 + 10 = " +
                         (new Calculator()).add(10).add(10).add(10).add(10).getAddResult()
         );
+
+        System.out.println(" 1 + 1234 = " + (new Calculator()).add(1).add(1234).getAddResult());
 
         System.out.println("20 + 20 = " + Calculator.add(20,20));
     }
