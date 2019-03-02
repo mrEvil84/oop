@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Garage {
 
-
     private List<Vehicle> vehicles;
 
     public Garage() {
@@ -28,6 +27,11 @@ public class Garage {
         this.vehicles.stream().forEach(s-> {
             s.repair();
         });
+    }
+
+    public int getVehiclerInGarageCount() {
+
+        return this.vehicles.size();
     }
 
 }
