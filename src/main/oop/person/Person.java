@@ -2,7 +2,7 @@ package person;
 
 import java.util.UUID;
 
-public class Person {
+public class Person extends Mammal {
 
     String name;
 
@@ -26,6 +26,11 @@ public class Person {
         this.age = age;
         this.pesel = pesel;
     }
+
+//    @Override
+//    public void eat(String food) {
+//        System.out.println("Person eat " + food);
+//    }
 
     public String getName() {
         return name;
@@ -61,5 +66,9 @@ public class Person {
     protected void finalize( ) throws Throwable
     {
         System.out.println("Niszczenie obiektu...Person");
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
