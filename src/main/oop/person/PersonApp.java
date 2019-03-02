@@ -9,7 +9,23 @@ public class PersonApp {
 //        changeNameToRomek(p);
 //        System.out.println(p.toString());
 
-        testInstanceOf();
+//        testInstanceOf();
+        testEat();
+
+    }
+
+    public static void testEat() {
+
+        Student student = new Student();
+        Teacher teacher = new Teacher();
+        Mammal student2 = new Student();
+
+        student.eat("sandwich");
+        teacher.eat("chicken");
+
+        student2.eat("test");
+        student2.voice("give me eat!!");
+
     }
 
     public static void changeNameToRomek(Person p) {
