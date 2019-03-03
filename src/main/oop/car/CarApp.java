@@ -6,7 +6,7 @@ public class CarApp {
 
         Garage garage = new Garage();
 
-        garage.park(new Vehicle())
+        garage
         .park(new Car())
         .park(new Bike())
         .park(new SportCar());

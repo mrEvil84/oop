@@ -18,18 +18,16 @@ public class Garage {
     }
 
     public void repairAll() {
-
 //        for (Vehicle vehicle : this.vehicles) {
 //            vehicle.repair();
 //        }
-
 
         this.vehicles.stream().forEach(s-> {
             s.repair();
         });
     }
 
-    public int getVehiclerInGarageCount() {
+    public int getVehicleCount() {
 
         return this.vehicles.size();
     }

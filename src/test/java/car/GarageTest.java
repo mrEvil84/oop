@@ -11,9 +11,9 @@ class GarageTest {
 
         Garage garage = new Garage();
 
-        garage.park(new Vehicle()).park(new Car()).park(new Bike());
+        garage.park(new Car()).park(new Bike());
 
-        assertEquals(3, garage.getVehiclerInGarageCount());
+        assertEquals(2, garage.getVehicleCount());
 
     }
 }

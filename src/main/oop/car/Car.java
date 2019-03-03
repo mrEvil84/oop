@@ -8,10 +8,17 @@ public class Car extends Vehicle {
 
     Double engineCapacity;
 
+    public Car(String name) {
+        super(name);
+        this.name = name;
+    }
+
     public Car() {
+        super("Car");
     }
 
     public Car(String name, String manufacturer, Double engineCapacity) {
+        super("Car");
         this.name = name;
         this.manufacturer = manufacturer;
         this.engineCapacity = engineCapacity;

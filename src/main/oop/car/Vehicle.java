@@ -1,9 +1,19 @@
 package car;
 
-public class Vehicle {
+abstract public class Vehicle {
 
-    public void repair()
-    {
-        System.out.println("Vehicle repair");
+    private String name;
+
+    public Vehicle() {
     }
+
+    public Vehicle(String name) {
+        this.name = name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    abstract public void repair();
 }
